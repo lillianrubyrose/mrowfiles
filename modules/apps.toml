@@ -1,0 +1,11 @@
+[module]
+steps = [
+    { kind = "install-packages", packages = [
+        "btop",
+        "obs-studio",
+    ] },
+    { kind = "install-packages", packages = [
+        "mercury-browser-avx2-bin",
+        "vesktop-bin",
+    ], aur = true },
+]

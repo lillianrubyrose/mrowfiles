@@ -1,0 +1,12 @@
+[module]
+steps = [
+    { kind = "install-packages", packages = [
+        "gnupg",
+        "openssh",
+        "yubico-pam",
+        "libfido2",
+        "age",
+    ] },
+    { kind = "run-script", path = "keys/setup.sh" },
+    "sudo systemctl enable pcscd.service",
+]

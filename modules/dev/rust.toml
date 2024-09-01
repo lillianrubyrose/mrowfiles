@@ -1,0 +1,12 @@
+[module]
+steps = [
+    { kind = "install-packages", packages = [
+        "git",
+        "mold",
+        "clang",
+        "rustup",
+    ] },
+    { kind = "copy-file", from = "rust/config.toml", to = "~/.cargo/config.toml" },
+    "rustup default stable",
+    "rustup toolchain install nightly",
+]
