@@ -5,4 +5,5 @@ steps = [
     { kind = "install-packages", packages = [
         "zed-preview-bin",
     ], aur = true },
+    { kind = "symlink", from = "dev/gitconfig", to = "~/.gitconfig" }
 ]
