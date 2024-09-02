@@ -1,9 +1,4 @@
 [module]
 steps = [
-    { kind = "install-packages", packages = [
-        "pipewire",
-        "pipewire-pulse",
-        "pavucontrol",
-    ] },
     { kind = "copy-file", from = "pipewire/sample-rate.conf", to = "/etc/pipewire/pipewire.conf.d/10-sample-rate.conf", as-root = true },
 ]

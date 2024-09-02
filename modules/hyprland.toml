@@ -13,6 +13,7 @@ steps = [
         "pinta",                       # simple photo editor
         "swww",                        # wallpaper
         "waybar",
+	"otf-font-awesome",
         "ttf-fira-sans",               # waybar font
         "ttf-fira-code",
         "ttf-firacode-nerd",
@@ -25,9 +26,22 @@ steps = [
 
         # misc
         "blueman",
+	"bluez",
+	"bluez-utils",
         "nm-connection-editor",
         "wl-clipboard",
         "pavucontrol",
+	"polkit-gnome",
+	"xdg-user-dirs",
+	"gvfs",
+	"tumbler",
+	"gtk4",
+	"libadwaita",
+	"qt6ct",
+	"flatpak",
+	"smile",
+	"xdg-desktop-portal-gtk",
+	"less"
     ] },
 
     { kind = "install-packages", packages = [
