@@ -1,4 +1,6 @@
 [module]
+includes = ["gaming/minecraft.toml"]
+
 steps = [
     { kind = "install-packages", packages = [
         "giflib",

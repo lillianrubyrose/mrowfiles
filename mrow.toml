@@ -3,11 +3,15 @@ aur-helper = "yay"
 
 [module]
 includes = [
-    "modules/lily/keys.toml", # Requires user presence, run first
+    "modules/lily/keys.toml",     # Requires user presence, run first
+    "modules/lily/hardware.toml",
     "modules/greetd.toml",
     "modules/hyprland.toml",
     "modules/pipewire.toml",
     "modules/dots.toml",
     "modules/apps.toml",
     "modules/dev.toml",
+    "modules/lily/gaming.toml",
 ]
+
+steps = [{ kind = "run-script", path = "scripts/enable-multilib.sh" }]

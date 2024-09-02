@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -e ~/.ssh/id_ed25519_sk ]; then
+  exit 0
+fi
+
 gpg --import 985A88CE54A3CB82-me@lillianrose.asc.pub
 
 echo "Running ssh-keygen -K"

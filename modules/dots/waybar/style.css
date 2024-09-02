@@ -70,7 +70,7 @@ window#waybar {
 #workspaces button:hover {
     color: @textcolor1;
     background: @workspacesbackground2;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 /* -----------------------------------------------------

@@ -1,0 +1,11 @@
+[module]
+steps = [
+    { kind = "install-packages", packages = [
+        "jdk8-openjdk",
+        "jdk17-openjdk",
+        "jdk21-openjdk",
+    ] },
+    { kind = "install-packages", packages = [
+        "prismlauncher-qt5-bin",
+    ], aur = true },
+]
