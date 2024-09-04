@@ -1,9 +1,9 @@
 [module]
-includes = ["dev/rust.toml"]
+includes = ["dev/rust.toml", "dev/podman.toml"]
 
 steps = [
     { kind = "install-packages", packages = [
         "zed-preview-bin",
     ], aur = true },
-    { kind = "symlink", from = "dev/gitconfig", to = "~/.gitconfig" }
+    { kind = "symlink", from = "dev/gitconfig", to = "~/.gitconfig" },
 ]
