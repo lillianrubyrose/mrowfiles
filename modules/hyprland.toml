@@ -8,7 +8,6 @@ steps = [
         "nwg-look",                    # gtk settings
         "dunst",                       # notifs
         "libnotify",
-        "hyprlock",
         "hypridle",
         "pinta",                       # simple photo editor
         "swww",                        # wallpaper
