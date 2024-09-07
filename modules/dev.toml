@@ -5,5 +5,6 @@ steps = [
     { kind = "install-packages", packages = [
         "zed-preview-bin",
     ], aur = true },
+    { kind = "install-packages", packages = ["nodejs", "pnpm"] },
     { kind = "symlink", from = "dev/gitconfig", to = "~/.gitconfig" },
 ]
