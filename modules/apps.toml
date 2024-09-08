@@ -1,12 +1,12 @@
 [module]
 steps = [
-    { kind = "install-packages", packages = [
-        "btop",
-        "obs-studio",
-	"imagemagick",
-    ] },
-    { kind = "install-packages", packages = [
-        "mercury-browser-avx2-bin",
-        "vesktop-bin",
-    ], aur = true },
+   { kind = "install-packages", packages = [
+      "btop",
+      "obs-studio",
+      "imagemagick",
+   ] },
+   { kind = "install-packages", packages = [
+      "mercury-browser-avx2-bin",
+      "vesktop-bin",
+   ], aur = true },
 ]

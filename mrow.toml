@@ -1,17 +1,9 @@
 [config]
 aur-helper = "yay"
-
-[module]
-includes = [
-    "modules/lily/keys.toml",     # Requires user presence, run first
-    "modules/lily/hardware.toml",
-    "modules/greetd.toml",
-    "modules/hyprland.toml",
-    "modules/pipewire.toml",
-    "modules/dots.toml",
-    "modules/apps.toml",
-    "modules/dev.toml",
-    "modules/lily/gaming.toml",
+host-includes = [
+   { hostname = "nya", includes = "hosts/nya.toml" },
+   { hostname = "vm", includes = "hosts/vm.toml" },
 ]
 
+[module]
 steps = [{ kind = "run-script", path = "scripts/enable-multilib.sh" }]
