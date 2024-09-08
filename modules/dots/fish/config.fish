@@ -4,7 +4,7 @@ end
 
 alias env="echo BAD GIRL"
 
-alias cat=bat
+alias cat='bat -p'
 alias ls="exa -lha"
 alias grep=rg
 
