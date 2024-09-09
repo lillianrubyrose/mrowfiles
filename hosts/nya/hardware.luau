@@ -10,3 +10,5 @@ mrow.install_packages({
    "lib32-libva-mesa-driver",
    "lib32-mesa-vdpau"
 })
+
+mrow.copy_file("pipewire/sample-rate.conf", "/etc/pipewire/pipewire.conf.d/10-sample-rate.conf", true)

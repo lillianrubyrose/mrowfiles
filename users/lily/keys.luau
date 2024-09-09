@@ -6,5 +6,5 @@ mrow.install_packages({
    "age"
 })
 
-mrow.run_script("keys/setup.sh")
+mrow.run_script("keys/import.sh")
 mrow.run_command("sudo systemctl enable pcscd.service")
