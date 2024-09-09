@@ -10,4 +10,5 @@ steps = [
       "mercury-browser-avx2-bin",
       "vesktop-bin",
    ], aur = true },
+   { kind = "copy-file", from = "mercury/syspref.js", to = "/etc/mercury/defaults/pref/syspref.js", as-root = true },
 ]
