@@ -1,0 +1,7 @@
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [app_id="alacritty-float|foot-float"] floating enable
+for_window [app_id="yad|nm-connection-editor|pavucontrol"] floating enable
+for_window [app_id="xfce-polkit|kvantummanager|qt5ct"] floating enable
+for_window [class="Yad|feh|Viewnior|Gpicview|Gimp|MPlayer"] floating enable
+for_window [class="VirtualBox Manager|qemu|Qemu-system-x86_64"] floating enable

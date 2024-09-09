@@ -41,10 +41,13 @@ mrow.install_packages({
 
 mrow.install_packages({"grimblast-git", "ttf-jetbrains-mono-nerd", "tofi", "smile"}, true)
 
-mrow.symlink("dots/hypr", "~/.config/hypr", true)
-mrow.symlink("dots/dunst", "~/.config/dunst", true)
-mrow.symlink("dots/waybar", "~/.config/waybar", true)
-mrow.symlink("dots/rofi", "~/.config/rofi", true)
-mrow.symlink("dots/tofi", "~/.config/tofi", true)
+mrow.install_package("greetd-tuigreet")
+mrow.copy_file("hyprland/greetd.toml", "/etc/greetd/config.toml", true)
+mrow.run_command("sudo systemctl enable greetd")
 
-require("greetd")
+mrow.symlink("hyprland/config", "~/.config/hypr", true)
+mrow.symlink("hyprland/waybar", "~/.config/waybar", true)
+
+mrow.symlink("wm-shared/dunst", "~/.config/dunst", true)
+mrow.symlink("wm-shared/rofi", "~/.config/rofi", true)
+mrow.symlink("wm-shared/tofi", "~/.config/tofi", true)

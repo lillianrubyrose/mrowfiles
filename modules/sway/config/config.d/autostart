@@ -1,0 +1,7 @@
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec dunst
+
+exec swww-daemon
+exec swww img ~/.config/sway/wallpapers/892384.jpg
+
+exec ~/.config/waybar/launch.sh

@@ -1,2 +1,2 @@
-require("@/modules/hyprland")
-require("@/modules/dots")
+require("@/modules/sway")
+require("@/users/lily")

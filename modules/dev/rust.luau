@@ -1,7 +1,5 @@
 mrow.install_packages({
-   "git",
    "mold",
-   "clang",
    "rustup",
 })
 

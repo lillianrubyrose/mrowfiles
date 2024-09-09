@@ -1,0 +1,42 @@
+{
+    // General Settings
+    "layer": "top",
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    // Pulseaudio
+    "pulseaudio": {
+        "format": "{icon} {volume:2}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": " MUTE",
+        "format-icons": {
+         "headphone": " ",
+         "default": [" ", " "]
+        },
+        "on-click": "pamixer -t",
+        "on-click-right": "pavucontrol",
+    },
+
+	"clock": {
+		"format": "{0:%a} {0:%H:%M} {0:%m/%d/%y}",
+		"tooltip": false
+	},
+
+    // Modules Left
+    "modules-left": [
+        "sway/workspaces",
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "clock",
+    ],
+
+    // Modules Right
+    "modules-right": [
+        "pulseaudio",
+        "tray",
+    ]
+}
