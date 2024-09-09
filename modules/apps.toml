@@ -4,6 +4,7 @@ steps = [
       "btop",
       "obs-studio",
       "imagemagick",
+      "qbittorrent",
    ] },
    { kind = "install-packages", packages = [
       "mercury-browser-avx2-bin",
