@@ -14,7 +14,6 @@ mrow.install_packages({
    "ttf-fira-sans",               -- waybar font
    "ttf-fira-code",
    "ttf-firacode-nerd",
-   "tofi",
 
    "noto-fonts",
    "noto-fonts-cjk",
@@ -36,12 +35,11 @@ mrow.install_packages({
    "libadwaita",
    "qt6ct",
    "flatpak",
-   "smile",
    "xdg-desktop-portal-gtk",
    "less",
 })
 
-mrow.install_packages({"grimblast-git", "ttf-jetbrains-mono-nerd"}, true)
+mrow.install_packages({"grimblast-git", "ttf-jetbrains-mono-nerd", "tofi", "smile"}, true)
 
 mrow.symlink("dots/hypr", "~/.config/hypr", true)
 mrow.symlink("dots/dunst", "~/.config/dunst", true)

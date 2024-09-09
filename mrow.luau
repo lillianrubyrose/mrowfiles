@@ -1,7 +1,7 @@
 return (function(): MrowRoot
    return {
       init = function()
-         mrow.run_command("scripts/enable-multilib.sh")
+         mrow.run_script("scripts/enable-multilib.sh")
 
          if mrow.hostname == "nya" then
             require("hosts/nya")
