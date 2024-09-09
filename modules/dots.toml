@@ -1,16 +1,17 @@
 [module]
 steps = [
-    { kind = "install-packages", packages = [
-        "fish",
-        "hyfetch",
-        "bat",
-        "exa",
-        "ripgrep",
-    ] },
+   { kind = "install-packages", packages = [
+      "fish",
+      "hyfetch",
+      "bat",
+      "exa",
+      "ripgrep",
+   ] },
 
-    # These can be paths like ./dots/fish or absolute paths.
-    { kind = "symlink", from = "dots/fish", to = "~/.config/fish", delete-existing = true },
-    { kind = "symlink", from = "dots/hyfetch.json", to = "~/.config/hyfetch.json", delete-existing = true },
+   # These can be paths like ./dots/fish or absolute paths.
+   { kind = "symlink", from = "dots/fish", to = "~/.config/fish", delete-existing = true },
+   { kind = "symlink", from = "dots/kitty", to = "~/.config/kitty", delete-existing = true },
+   { kind = "symlink", from = "dots/hyfetch.json", to = "~/.config/hyfetch.json", delete-existing = true },
 
-    "sudo chsh -s /usr/bin/fish lily",
+   "sudo chsh -s /usr/bin/fish lily",
 ]
