@@ -1,6 +1,0 @@
-[module]
-steps = [
-    { kind = "install-package", package = "greetd-tuigreet" },
-    { kind = "copy-file", from = "./greetd/config.toml", to = "/etc/greetd/config.toml", as-root = true },
-    "sudo systemctl enable greetd",
-]

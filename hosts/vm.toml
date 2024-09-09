@@ -1,2 +1,0 @@
-[module]
-steps = ["../modules/hyprland.toml", "../modules/dots.toml"]

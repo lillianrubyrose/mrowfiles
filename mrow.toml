@@ -1,9 +1,0 @@
-[config]
-aur-helper = "yay"
-host-includes = [
-   { hostname = "nya", includes = "hosts/nya.toml" },
-   { hostname = "vm", includes = "hosts/vm.toml" },
-]
-
-[module]
-steps = [{ kind = "run-script", path = "scripts/enable-multilib.sh" }]
