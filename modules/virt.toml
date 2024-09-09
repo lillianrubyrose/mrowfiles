@@ -1,17 +1,18 @@
 [module]
 steps = [
-    { kind = "install-packages", packages = [
-        "qemu-full",
-        "qemu-img",
-        "libvirt",
-        "virt-install",
-        "virt-manager",
-        "virt-viewer",
-        "edk2-ovmf",
-        "swtpm",
-        "guestfs-tools",
-        "libosinfo",
-    ] },
+   { kind = "install-packages", packages = [
+      "qemu-full",
+      "qemu-img",
+      "libvirt",
+      "virt-install",
+      "virt-manager",
+      "virt-viewer",
+      "edk2-ovmf",
+      "swtpm",
+      "guestfs-tools",
+      "libosinfo",
+      "dnsmasq",
+   ] },
 
-    { kind = "run-script", path = "virt/enable-services.sh" },
+   { kind = "run-script", path = "virt/enable-services.sh" },
 ]
